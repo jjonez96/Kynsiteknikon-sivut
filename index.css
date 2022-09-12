@@ -1,0 +1,323 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #fff;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 16px;
+  position: relative;
+  top: 5px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  color: #f1cbb5;
+}
+
+.topnav .icon {
+  display: none;
+}
+.instagram {
+  margin-left: -20px;
+  margin-top: 3px;
+}
+
+.topnav .lillaiita {
+  font-family: "Oooh Baby", cursive;
+  font-size: 25px;
+  padding: 14px 16px;
+  position: relative;
+  top: 2px;
+  font-weight: 600;
+  float: left;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: sticky;
+    top: 0px;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 10;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    transform: translate();
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+header {
+  position: relative;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 800px;
+  color: black;
+  text-align: center;
+  background-color: #f1cbb5;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-family: "Oooh Baby", cursive;
+  font-size: 8.2rem;
+  font-weight: 700;
+  position: relative;
+  top: 200px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+  .header-content h1 {
+    font-size: 4rem;
+    position: relative;
+    top: 250px;
+  }
+}
+
+.header-content p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  top: 80px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 600px) {
+  .header-content p {
+    font-size: 1.4rem;
+    position: relative;
+    top: 180px;
+  }
+}
+
+.description {
+  float: left;
+  width: 50%;
+  padding: 0 1px;
+}
+
+.description p {
+  text-align: left;
+  line-height: 30px;
+}
+@media screen and (max-width: 1236px) {
+  .description {
+    width: 100%;
+    display: block;
+    margin-bottom: 70px;
+  }
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.price-content {
+  margin: 0 -5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.price-content h1 {
+  text-align: center;
+  font-family: "Oooh Baby", cursive;
+  font-size: 55px;
+  color: #000;
+}
+
+.price-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.h3pos {
+  position: relative;
+  top: 23px;
+}
+.price-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 40px;
+  padding: 20px;
+  text-align: center;
+  height: 600px;
+  border-radius: 20px;
+  background-color: #f1cbb5;
+}
+@media screen and (max-width: 1200px) {
+  .price-card {
+    height: 80%;
+    margin: 0 20px;
+  }
+}
+
+.lower-description {
+  float: left;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.lower-description p {
+  text-align: left;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lower-description {
+    width: 100%;
+    display: block;
+  }
+}
+.lower-price-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border-radius: 20px;
+  margin: 40px;
+  padding: 20px;
+  background-color: #f1cbb5;
+}
+@media screen and (max-width: 1200px) {
+  .lower-price-card {
+    height: 80%;
+    margin: 0 10px;
+  }
+}
+
+div.container {
+  text-align: center;
+  height: 200px;
+}
+div.container,
+h1 {
+  font-family: "Oooh Baby", cursive;
+  font-size: 55px;
+  text-align: center;
+}
+
+ul.myUL {
+  font-family: "Roboto";
+  line-height: 30px;
+  font-size: 18px;
+
+  display: inline-block;
+  text-align: left;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 50px;
+  color: black;
+  background-color: #f1cbb5;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-family: "Oooh Baby", cursive;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.footer-content p {
+  max-width: 500px;
+  margin: 10px;
+  line-height: 28px;
+  font-size: 18px;
+  color: #000000;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.socials li {
+  padding-left: 20px;
+  position: relative;
+  top: 20px;
+  right: 30px;
+}
+
+.socials a {
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1.5rem;
+  width: 30px;
+}
+
+.socials a:hover i {
+  color: #fff;
+}
+.elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {
+  padding: 20px;
+}
