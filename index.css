@@ -319,5 +319,13 @@ footer {
   color: #fff;
 }
 .elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {
-  padding: 20px;
+  z-index: 0 !important;
+  padding: 30px !important;
+}
+
+.cover {
+  position: relative;
+  bottom: 80px;
+  background-color: #fff;
+  height: 200px;
 }
