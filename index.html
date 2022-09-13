@@ -23,7 +23,6 @@
     />
     <title>Lillaiita</title>
   </head>
-
   <body>
     <nav class="topnav">
       <div class="topnav" id="myTopnav">
@@ -39,23 +38,64 @@
         </a>
       </div>
     </nav>
+    <button onclick="topFunction()" id="backToTop" title="Go to top">
+      <i class="fa fa-arrow-up"></i>
+    </button>
     <header class="hero" id="Lillaiita">
-      <div class="header-content">
-        <h1>Lillaiita</h1>
-        <p>Kynsiartisti</p>
-      </div>
+      <article>
+        <div class="header-content">
+          <h1>Lillaiita</h1>
+          <p>Kynsiartisti</p>
+          <ul class="myUL">
+            <li><strong>Geelaukset</strong></li>
+            <li><strong>Rakennekynnet</strong></li>
+            <li><strong>Huollot</strong></li>
+            <li><strong>Koristelut</strong></li>
+          </ul>
+        </div>
+      </article>
     </header>
-    <h1 class="container">Palvelut</h1>
-    <div class="container">
-      <ul class="myUL">
-        <li><strong>Geelaukset</strong></li>
-        <li><strong>Rakennekynnet</strong></li>
-        <li><strong>Huollot</strong></li>
-        <li><strong>Koristelut</strong></li>
-      </ul>
+    <h1>Tietoja Minusta</h1>
+    <div class="aboutme-container">
+      <div class="aboutme-header">
+        <img
+          src="https://images.unsplash.com/photo-1557555187-23d685287bc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+          alt="rover"
+        />
+      </div>
+      <article>
+        <div class="aboutme-body">
+          <h2>Koulutus</h2>
+          <p>
+            Normaalia kynsilakkaa kestävämpi vaihtoehto, jossa oman kynnen
+            päälle tehdään geelilakkaukset. Geelaus tehdään oman luonnon kynnen
+            päälle, ja koristellaan asiakkaan toiveiden mukaan. Ennen geelausta
+            asiakkaan oma luonnonkynsi muodoillaan haluttuun muotoon ja
+            pituuteen. Geelilakkaukset kestää <b>2-3</b> viikkoa, riippuen
+            niihin kohdistuneesta rasitteesta sekä oman kynnen kasvunopeudesta
+            ja näistä muodostuu jokaiselle sopiva huoltoväli.
+          </p>
+        </div>
+        <div class="aboutme-body">
+          <h2>Paikkakunta</h2>
+          <p>
+            Normaalia kynsilakkaa kestävämpi vaihtoehto, jossa oman kynnen
+            päälle tehdään geelilakkaukset. Geelaus tehdään oman luonnon kynnen
+            päälle, ja koristellaan asiakkaan toiveiden mukaan. Ennen geelausta
+            asiakkaan oma luonnonkynsi muodoillaan haluttuun muotoon ja
+            pituuteen. Geelilakkaukset kestää <b>2-3</b> viikkoa, riippuen
+            niihin kohdistuneesta rasitteesta sekä oman kynnen kasvunopeudesta
+            ja näistä muodostuu jokaiselle sopiva huoltoväli.
+          </p>
+        </div>
+      </article>
     </div>
+
+    <h1>Seuraa Instassa!</h1>
+
     <div class="elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd"></div>
     <div class="cover"></div>
+
     <div class="price-content" id="Hinnasto">
       <h1>Hinnasto</h1>
       <article class="description">
@@ -129,11 +169,17 @@
     <footer id="Yhteystiedot">
       <div class="footer-content">
         <article>
-          <h3>Lillaiita</h3>
-          <b> osoite </b>
-          <p>Kettulankatu 5A3 Seinäjoki</p>
-          <b> Puhelinnumero </b>
-          <p>0501234567</p>
+          <a href="#Lillaiita"><h1>Lillaiita</h1></a>
+          <address>
+            <b> osoite </b>
+            <p>Kettulankatu 5 A3 Seinäjoki</p>
+            <b> Sähköposti</b>
+            <p>
+              <a href="mailto:iidakasari@gmail.com">iidakasari@gmail.com</a>
+            </p>
+            <b> Puhelinnumero </b>
+            <p><a href="tel:+358501234567">0501234567</a></p>
+          </address>
           <ul class="socials">
             <li>
               <a href="#"><i class="fa fa-facebook"></i></a>
@@ -156,6 +202,7 @@
         </article>
       </div>
     </footer>
+
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script>
       function responsiveNav() {
@@ -165,6 +212,27 @@
         } else {
           nav.className = "topnav";
         }
+      }
+      let mybutton = document.getElementById("backToTop");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 1000 ||
+          document.documentElement.scrollTop > 1000
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
   </body>

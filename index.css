@@ -2,21 +2,26 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body {
   font-family: "Roboto", sans-serif;
   width: 100%;
   height: 100%;
   margin: 0px;
   overflow-x: hidden;
-  scroll-behavior: smooth;
   background-color: #fff;
+  text-align: center;
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #fff;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 3;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -96,6 +101,7 @@ header {
   color: black;
   text-align: center;
   background-color: #f1cbb5;
+  margin-bottom: 400px;
 }
 
 .header-content {
@@ -168,7 +174,7 @@ hr {
 
 .price-content {
   margin: 0 -5px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 .price-content h1 {
@@ -188,7 +194,7 @@ hr {
   top: 23px;
 }
 .price-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 40px;
   padding: 20px;
   text-align: center;
@@ -221,18 +227,69 @@ hr {
   }
 }
 .lower-price-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 20px;
   margin: 40px;
+  margin-bottom: 400px;
   padding: 20px;
   background-color: #f1cbb5;
 }
+
 @media screen and (max-width: 1200px) {
   .lower-price-card {
     height: 80%;
     margin: 0 10px;
+    margin-bottom: 400px;
   }
+}
+
+.aboutme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1cbb5;
+  border-radius: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  margin: 40px;
+  height: 590px;
+  width: auto;
+  margin-bottom: 400px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .aboutme-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 400px;
+  }
+}
+
+.aboutme-header img {
+  width: auto;
+  height: 600px;
+  object-fit: cover;
+}
+@media screen and (max-width: 1000px) {
+  .aboutme-header img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+.aboutme-body {
+  padding: 20px;
+  min-height: 250px;
+  text-align: left;
 }
 
 div.container {
@@ -250,9 +307,14 @@ ul.myUL {
   font-family: "Roboto";
   line-height: 30px;
   font-size: 18px;
-
+  padding-top: 120px;
   display: inline-block;
   text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .myUL {
+    margin-top: 120px;
+  }
 }
 
 footer {
@@ -261,6 +323,7 @@ footer {
   left: 0;
   right: 0;
   width: 100%;
+  font-size: 22px;
   margin-top: 50px;
   color: black;
   background-color: #f1cbb5;
@@ -285,8 +348,16 @@ footer {
   max-width: 500px;
   margin: 10px;
   line-height: 28px;
-  font-size: 18px;
+  font-size: 20px;
   color: #000000;
+}
+.footer-content a {
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+}
+.footer-content a:hover {
+  color: #fff;
 }
 
 .socials {
@@ -328,4 +399,23 @@ footer {
   bottom: 80px;
   background-color: #fff;
   height: 200px;
+}
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#backToTop:hover {
+  background-color: #313131;
 }
