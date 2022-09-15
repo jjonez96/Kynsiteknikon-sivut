@@ -27,9 +27,10 @@
     <nav class="topnav">
       <div class="topnav" id="myTopnav">
         <a href="#Lillaiita" class="lillaiita">Lillaiita</a>
-        <a href="#Portfolio">Portfolio</a>
-        <a href="#Hinnasto">Hinnasto</a>
         <a href="#Yhteystiedot">Yhteystiedot</a>
+        <a href="#Hinnasto">Hinnasto</a>
+        <a href="#Kuvat">Kuvat</a>
+        <a href="#Kokemus">Kokemus</a>
         <a class="lillaiita" href="https://www.instagram.com/lillaiita_nails/"
           ><i class="fa fa-instagram instagram"></i
         ></a>
@@ -38,24 +39,25 @@
         </a>
       </div>
     </nav>
-    <button onclick="topFunction()" id="backToTop" title="Go to top">
+    <button onclick="topFunction()" id="backToTop">
       <i class="fa fa-arrow-up"></i>
     </button>
     <header class="hero" id="Lillaiita">
       <article>
         <div class="header-content">
           <h1>Lillaiita</h1>
-          <p>Kynsiartisti</p>
+          <b>Kynsiartisti</b>
           <ul class="myUL">
-            <li><strong>Geelaukset</strong></li>
+            <li><strong>Kynsien geelaukset</strong></li>
             <li><strong>Rakennekynnet</strong></li>
-            <li><strong>Huollot</strong></li>
-            <li><strong>Koristelut</strong></li>
+            <li><strong>Kynsien huollot</strong></li>
+            <li><strong>Kynsien koristelut</strong></li>
           </ul>
+          <a class="contact-button" href="#Yhteystiedot">Ota Yhteyttä</a>
         </div>
       </article>
     </header>
-    <h1>Tietoja Minusta</h1>
+    <h1 id="Kokemus">Tietoja Minusta</h1>
     <div class="aboutme-container">
       <div class="aboutme-header">
         <img
@@ -90,12 +92,9 @@
         </div>
       </article>
     </div>
-
-    <h1>Seuraa Instassa!</h1>
-
+    <h1 id="Kuvat">Seuraa Instassa!</h1>
     <div class="elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd"></div>
     <div class="cover"></div>
-
     <div class="price-content" id="Hinnasto">
       <h1>Hinnasto</h1>
       <article class="description">
@@ -165,19 +164,18 @@
         </div>
       </article>
     </div>
-
     <footer id="Yhteystiedot">
       <div class="footer-content">
         <article>
           <a href="#Lillaiita"><h1>Lillaiita</h1></a>
           <address>
-            <b> osoite </b>
+            <b>osoite </b>
             <p>Kettulankatu 5 A3 Seinäjoki</p>
-            <b> Sähköposti</b>
+            <b>Sähköposti</b>
             <p>
               <a href="mailto:iidakasari@gmail.com">iidakasari@gmail.com</a>
             </p>
-            <b> Puhelinnumero </b>
+            <b>Puhelinnumero</b>
             <p><a href="tel:+358501234567">0501234567</a></p>
           </address>
           <ul class="socials">
@@ -202,13 +200,12 @@
         </article>
       </div>
     </footer>
-
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script>
       function responsiveNav() {
         let nav = document.getElementById("myTopnav");
         if (nav.className === "topnav") {
-          nav.className += " responsive";
+          nav.className += "responsive";
         } else {
           nav.className = "topnav";
         }

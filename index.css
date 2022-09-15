@@ -41,7 +41,8 @@ body {
 }
 
 .topnav a:hover {
-  color: #f1cbb5;
+  transform: scale(1.04);
+  transition: all 0.2s ease;
 }
 
 .topnav .icon {
@@ -103,6 +104,11 @@ header {
   background-color: #f1cbb5;
   margin-bottom: 400px;
 }
+@media screen and (max-width: 600px) {
+  header {
+    height: 700px;
+  }
+}
 
 .header-content {
   display: flex;
@@ -110,6 +116,12 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .header-content {
+    position: relative;
+    bottom: 100px;
+  }
 }
 
 .header-content h1 {
@@ -123,38 +135,64 @@ header {
 
 @media screen and (max-width: 600px) {
   .header-content h1 {
-    font-size: 4rem;
+    font-size: 6rem;
     position: relative;
     top: 250px;
   }
 }
 
-.header-content p {
+.header-content b {
   font-size: 1.6rem;
   font-weight: 700;
   position: relative;
-  top: 80px;
+  top: 90px;
   text-transform: capitalize;
+  padding-bottom: 60px;
 }
 @media screen and (max-width: 600px) {
-  .header-content p {
+  .header-content b {
     font-size: 1.4rem;
     position: relative;
     top: 180px;
   }
 }
-
+.contact-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  padding: 17px 48px;
+  color: #fff;
+  background-color: #000;
+  height: 48px;
+}
+.contact-button:hover {
+  transform: scale(1.04);
+  transition: all 0.2s ease;
+  background-color: #000;
+}
 .description {
   float: left;
   width: 50%;
-  padding: 0 1px;
 }
 
 .description p {
   text-align: left;
   line-height: 30px;
 }
-@media screen and (max-width: 1236px) {
+@media screen and (max-width: 1246px) {
   .description {
     width: 100%;
     display: block;
@@ -202,7 +240,7 @@ hr {
   border-radius: 20px;
   background-color: #f1cbb5;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1550px) {
   .price-card {
     height: 80%;
     margin: 0 20px;
@@ -212,7 +250,7 @@ hr {
 .lower-description {
   float: left;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 30px;
 }
 
 .lower-description p {
@@ -220,10 +258,11 @@ hr {
   line-height: 30px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1550px) {
   .lower-description {
     width: 100%;
     display: block;
+    height: 80%;
   }
 }
 .lower-price-card {
@@ -243,20 +282,19 @@ hr {
     margin-bottom: 400px;
   }
 }
-
 .aboutme-container {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f1cbb5;
   border-radius: 20px;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 40px;
-  height: 590px;
+  height: 670px;
   width: auto;
   margin-bottom: 400px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 30px;
 }
@@ -266,7 +304,6 @@ hr {
     justify-content: center;
     align-items: center;
     height: auto;
-
     width: 90%;
     margin-left: 5%;
     margin-bottom: 400px;
@@ -274,20 +311,20 @@ hr {
 }
 
 .aboutme-header img {
-  width: auto;
-  height: 600px;
+  height: 700px;
   object-fit: cover;
+  width: 400px;
 }
 @media screen and (max-width: 1000px) {
   .aboutme-header img {
     width: 100%;
-    height: 600px;
+    height: 500px;
     object-fit: cover;
   }
 }
 
 .aboutme-body {
-  padding: 20px;
+  padding: 5px;
   min-height: 250px;
   text-align: left;
 }
@@ -304,10 +341,10 @@ h1 {
 }
 
 ul.myUL {
-  font-family: "Roboto";
   line-height: 30px;
   font-size: 18px;
-  padding-top: 120px;
+  padding-top: 50px;
+  list-style-type: circle;
   display: inline-block;
   text-align: left;
 }
@@ -349,6 +386,7 @@ footer {
   margin: 10px;
   line-height: 28px;
   font-size: 20px;
+
   color: #000000;
 }
 .footer-content a {
@@ -387,7 +425,9 @@ footer {
 }
 
 .socials a:hover i {
-  color: #fff;
+  transform: scale(1.24);
+  transition: all 0.2s ease;
+  color: #000;
 }
 .elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {
   z-index: 0 !important;
@@ -417,5 +457,7 @@ footer {
 }
 
 #backToTop:hover {
-  background-color: #313131;
+  transform: scale(1.14);
+  transition: all 0.2s ease;
+  background-color: #000;
 }
