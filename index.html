@@ -24,7 +24,7 @@
     <title>Lillaiita</title>
   </head>
   <body>
-    <nav class="topnav">
+    <nav>
       <div class="topnav" id="myTopnav">
         <a href="#Lillaiita" class="lillaiita">Lillaiita</a>
         <a href="#Yhteystiedot">Yhteystiedot</a>
@@ -34,8 +34,21 @@
         <a class="lillaiita" href="https://www.instagram.com/lillaiita_nails/"
           ><i class="fa fa-instagram instagram"></i
         ></a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-          <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon">
+          <input
+            class="iconn visuallyHidden"
+            id="iconn"
+            type="checkbox"
+            onclick="responsiveNav()"
+          />
+          <label for="iconn">
+            <div class="hamburger hamburger3">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
         </a>
       </div>
     </nav>
@@ -183,18 +196,12 @@
               <a href="#"><i class="fa fa-facebook"></i></a>
             </li>
             <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
               <a href="https://www.instagram.com/lillaiita_nails/"
                 ><i class="fa fa-instagram"></i
               ></a>
             </li>
             <li>
               <a href="#"><i class="fa fa-pinterest"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-linkedin-square"></i></a>
             </li>
           </ul>
         </article>
@@ -205,13 +212,12 @@
       function responsiveNav() {
         let nav = document.getElementById("myTopnav");
         if (nav.className === "topnav") {
-          nav.className += "responsive";
+          nav.className += " responsive";
         } else {
           nav.className = "topnav";
         }
       }
       let mybutton = document.getElementById("backToTop");
-
       window.onscroll = function () {
         scrollFunction();
       };
@@ -225,11 +231,6 @@
         } else {
           mybutton.style.display = "none";
         }
-      }
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
       }
     </script>
   </body>

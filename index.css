@@ -75,7 +75,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
-    position: sticky;
+    position: fixed;
     top: 0px;
   }
   .topnav.responsive .icon {
@@ -86,8 +86,8 @@ body {
   .topnav.responsive a {
     float: none;
     display: block;
-    transform: translate();
-    text-align: center;
+
+    text-align: left;
     z-index: 1;
   }
 }
@@ -101,7 +101,12 @@ header {
   height: 800px;
   color: black;
   text-align: center;
-  background-color: #f1cbb5;
+  background: rgb(182, 161, 158);
+  background: linear-gradient(
+    328deg,
+    rgba(182, 161, 158, 1) 45%,
+    rgba(108, 100, 139, 1) 80%
+  );
   margin-bottom: 400px;
 }
 @media screen and (max-width: 600px) {
@@ -238,7 +243,7 @@ hr {
   text-align: center;
   height: 600px;
   border-radius: 20px;
-  background-color: #f1cbb5;
+  background-color: #b6a19e;
 }
 @media screen and (max-width: 1550px) {
   .price-card {
@@ -262,7 +267,7 @@ hr {
   .lower-description {
     width: 100%;
     display: block;
-    height: 80%;
+    margin-bottom: 70px;
   }
 }
 .lower-price-card {
@@ -272,10 +277,10 @@ hr {
   margin: 40px;
   margin-bottom: 400px;
   padding: 20px;
-  background-color: #f1cbb5;
+  background-color: #b6a19e;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1550px) {
   .lower-price-card {
     height: 80%;
     margin: 0 10px;
@@ -286,7 +291,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f1cbb5;
+  background-color: #b6a19e;
   border-radius: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   margin: 40px;
@@ -363,7 +368,7 @@ footer {
   font-size: 22px;
   margin-top: 50px;
   color: black;
-  background-color: #f1cbb5;
+  background-color: #b6a19e;
 }
 
 .footer-content {
@@ -460,4 +465,55 @@ footer {
   transform: scale(1.14);
   transition: all 0.2s ease;
   background-color: #000;
+}
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.hamburger {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.hamburger .bar {
+  width: 30px;
+  height: 4px;
+  background-color: maroon;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+}
+
+.iconn:checked + label > .hamburger3 > .bar1 {
+  transform: rotate(45deg);
+  height: 4px;
+  width: 24px;
+}
+
+.iconn:checked + label > .hamburger3 > .bar3 {
+  transform: rotate(45deg);
+  height: 4px;
+  background-color: transparent;
+}
+
+.iconn:checked + label > .hamburger3 > .bar2 {
+  transform: rotate(-45deg);
+  height: 4px;
+  background-color: transparent;
+}
+
+.iconn:checked + label > .hamburger3 > .bar4 {
+  transform: rotate(-45deg);
+  height: 4px;
+  width: 24px;
 }
