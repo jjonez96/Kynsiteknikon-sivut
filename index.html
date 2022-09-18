@@ -21,27 +21,33 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Lillaiita</title>
   </head>
   <body>
     <nav>
       <div class="topnav" id="myTopnav">
-        <a href="#Lillaiita" class="lillaiita">Lillaiita</a>
-        <a href="#Yhteystiedot">Yhteystiedot</a>
-        <a href="#Hinnasto">Hinnasto</a>
-        <a href="#Kuvat">Kuvat</a>
-        <a href="#Kokemus">Kokemus</a>
-        <a class="lillaiita" href="https://www.instagram.com/lillaiita_nails/"
-          ><i class="fa fa-instagram instagram"></i
-        ></a>
+        <div class="move-right">
+          <a href="#Lillaiita" class="lillaiita">Lillaiita</a>
+          <a href="#Yhteystiedot">Yhteystiedot</a>
+          <a href="#Hinnasto">Hinnasto</a>
+          <a href="#Kuvat">Kuvat</a>
+          <a href="#Kokemus">Kokemus</a>
+          <a class="lillaiita" href="https://www.instagram.com/lillaiita_nails/"
+            ><i class="fa fa-instagram instagram"></i
+          ></a>
+        </div>
         <a href="javascript:void(0);" class="icon">
           <input
-            class="iconn visuallyHidden"
-            id="iconn"
+            class="burger-icon visuallyHidden"
+            id="burger-icon"
             type="checkbox"
             onclick="responsiveNav()"
           />
-          <label for="iconn">
+          <label for="burger-icon">
             <div class="hamburger hamburger3">
               <span class="bar bar1"></span>
               <span class="bar bar2"></span>
@@ -218,19 +224,25 @@
         }
       }
       let mybutton = document.getElementById("backToTop");
+
       window.onscroll = function () {
         scrollFunction();
       };
 
       function scrollFunction() {
         if (
-          document.body.scrollTop > 1000 ||
-          document.documentElement.scrollTop > 1000
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
         ) {
           mybutton.style.display = "block";
         } else {
           mybutton.style.display = "none";
         }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
   </body>
