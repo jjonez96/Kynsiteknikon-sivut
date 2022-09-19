@@ -25,20 +25,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Lillaiita</title>
+    <title>Lillaiitan Kynsistudio</title>
   </head>
   <body>
     <nav>
       <div class="topnav" id="myTopnav">
-        <div class="move-right">
-          <a href="#Lillaiita" class="lillaiita">Lillaiita</a>
+        <div class="move-right" onclick="responsiveNav()">
+          <a href="#Lillaiita" class="lillaiita">Lillaiita Kynsistudio</a>
           <a href="#Yhteystiedot">Yhteystiedot</a>
           <a href="#Hinnasto">Hinnasto</a>
           <a href="#Kuvat">Kuvat</a>
           <a href="#Kokemus">Kokemus</a>
-          <a class="lillaiita" href="https://www.instagram.com/lillaiita_nails/"
-            ><i class="fa fa-instagram instagram"></i
-          ></a>
+          <a
+            href="https://www.instagram.com/lillaiita_nails/"
+            class="lillaiita"
+          >
+            <i class="fa fa-instagram instagram"></i>
+          </a>
+          <a href="https://www.color-hex.com/color/dba4a6" class="lillaiita">
+            <i class="fa fa-facebook fa-facebook facebook"></i>
+          </a>
         </div>
         <a href="javascript:void(0);" class="icon">
           <input
@@ -64,56 +70,36 @@
     <header class="hero" id="Lillaiita">
       <article>
         <div class="header-content">
-          <h1>Lillaiita</h1>
-          <b>Kynsiartisti</b>
-          <ul class="myUL">
-            <li><strong>Kynsien geelaukset</strong></li>
-            <li><strong>Rakennekynnet</strong></li>
-            <li><strong>Kynsien huollot</strong></li>
-            <li><strong>Kynsien koristelut</strong></li>
-          </ul>
+          <h1>
+            Lillaiitan <br />
+            Kynsistudio
+          </h1>
           <a class="contact-button" href="#Yhteystiedot">Ota Yhteyttä</a>
         </div>
       </article>
     </header>
-    <h1 id="Kokemus">Tietoja Minusta</h1>
+    <div class="overlays">
+      <img src="/assets/overlay1.png" alt="overlay1" class="adjust-overlay" />
+      <img src="/assets/overlay2.png" alt="overlay2" />
+    </div>
+    <h1 id="Kokemus">TIETOJA MINUSTA</h1>
     <div class="aboutme-container">
       <div class="aboutme-header">
-        <img
-          src="https://images.unsplash.com/photo-1557555187-23d685287bc3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-          alt="rover"
-        />
+        <img src="/assets/iida.jpg" alt="rover" />
       </div>
       <article>
         <div class="aboutme-body">
-          <h2>Koulutus</h2>
+          <h2>KOULUTUS</h2>
           <p>
-            Normaalia kynsilakkaa kestävämpi vaihtoehto, jossa oman kynnen
-            päälle tehdään geelilakkaukset. Geelaus tehdään oman luonnon kynnen
-            päälle, ja koristellaan asiakkaan toiveiden mukaan. Ennen geelausta
-            asiakkaan oma luonnonkynsi muodoillaan haluttuun muotoon ja
-            pituuteen. Geelilakkaukset kestää <b>2-3</b> viikkoa, riippuen
-            niihin kohdistuneesta rasitteesta sekä oman kynnen kasvunopeudesta
-            ja näistä muodostuu jokaiselle sopiva huoltoväli.
-          </p>
-        </div>
-        <div class="aboutme-body">
-          <h2>Paikkakunta</h2>
-          <p>
-            Normaalia kynsilakkaa kestävämpi vaihtoehto, jossa oman kynnen
-            päälle tehdään geelilakkaukset. Geelaus tehdään oman luonnon kynnen
-            päälle, ja koristellaan asiakkaan toiveiden mukaan. Ennen geelausta
-            asiakkaan oma luonnonkynsi muodoillaan haluttuun muotoon ja
-            pituuteen. Geelilakkaukset kestää <b>2-3</b> viikkoa, riippuen
-            niihin kohdistuneesta rasitteesta sekä oman kynnen kasvunopeudesta
-            ja näistä muodostuu jokaiselle sopiva huoltoväli.
+            Olen huhtikuussa 2022 valmistunut kosmetologi. Opintoni suoritin
+            Tampereen aikuiskoulutuskeskus Lumovassa. Toukokuussa 2022 sain myös
+            rakennekynsien laajan peruskoulutuksen suoritettua Tampereella.
+            Koulutuksen järjestävänä tahona toimi Magnifique.
           </p>
         </div>
       </article>
     </div>
-    <h1 id="Kuvat">Seuraa Instassa!</h1>
-    <div class="elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd"></div>
-    <div class="cover"></div>
+
     <div class="price-content" id="Hinnasto">
       <h1>Hinnasto</h1>
       <article class="description">
@@ -183,10 +169,13 @@
         </div>
       </article>
     </div>
+    <h1 id="Kuvat">Seuraa Instassa!</h1>
+    <div class="elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd"></div>
+    <div class="cover"></div>
     <footer id="Yhteystiedot">
       <div class="footer-content">
         <article>
-          <a href="#Lillaiita"><h1>Lillaiita</h1></a>
+          <a href="#Lillaiita"><h1>Lillaiitan Kynsistudio</h1></a>
           <address>
             <b>osoite </b>
             <p>Kettulankatu 5 A3 Seinäjoki</p>
@@ -214,36 +203,6 @@
       </div>
     </footer>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <script>
-      function responsiveNav() {
-        let nav = document.getElementById("myTopnav");
-        if (nav.className === "topnav") {
-          nav.className += " responsive";
-        } else {
-          nav.className = "topnav";
-        }
-      }
-      let mybutton = document.getElementById("backToTop");
-
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>

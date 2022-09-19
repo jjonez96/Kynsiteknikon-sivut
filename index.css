@@ -18,10 +18,9 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #fff;
-  position: fixed;
   width: 100%;
+  background-color: rgba(219, 164, 166, 0.9);
+  position: fixed;
   top: 0px;
   z-index: 3;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -33,13 +32,14 @@ body {
   color: #000;
   font-weight: 600;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 36px;
   position: relative;
   top: 5px;
   text-decoration: none;
   font-size: 18px;
 }
-.fadee a:hover {
+
+.move-right a:hover {
   transform: scale(1.04);
   transition: all 0.2s ease;
 }
@@ -47,7 +47,11 @@ body {
   display: none;
 }
 .instagram {
-  margin-left: -25px;
+  margin-left: -5px;
+  margin-top: 3px;
+}
+.facebook {
+  margin-left: -5px;
   margin-top: 3px;
 }
 .topnav .lillaiita {
@@ -60,7 +64,7 @@ body {
   float: left;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 908px) {
   .topnav a:not(:first-child) {
     display: none;
   }
@@ -70,7 +74,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 908px) {
   .topnav {
     position: fixed;
     top: 0px;
@@ -78,10 +82,17 @@ body {
   .topnav.responsive {
     position: fixed;
     top: 0px;
+    height: 100%;
   }
   .instagram {
     margin-left: 0px;
     margin-top: 0px;
+  }
+  .facebook {
+    margin-left: 0px;
+    position: relative;
+    bottom: 60px;
+    left: 40px;
   }
   .topnav.responsive .icon {
     position: absolute;
@@ -92,6 +103,7 @@ body {
     display: block;
     text-align: left;
     width: 50%;
+    padding: 14px 16px;
   }
 
   .topnav.responsive .move-right {
@@ -106,26 +118,16 @@ body {
 }
 
 header {
-  position: relative;
-  bottom: 40px;
   left: 0;
   right: 0;
   width: 100%;
-  height: 800px;
+  height: 1000px;
   color: black;
   text-align: center;
-  background: rgb(182, 161, 158);
-  background: linear-gradient(
-    328deg,
-    rgba(182, 161, 158, 1) 20%,
-    rgba(108, 100, 139, 1) 80%
-  );
-  margin-bottom: 400px;
-}
-@media screen and (max-width: 600px) {
-  header {
-    height: 700px;
-  }
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://raw.githubusercontent.com/jjonez96/IidanSivut/main/public/pictures/oona.jpg");
+  margin-bottom: 50px;
 }
 
 .header-content {
@@ -146,34 +148,21 @@ header {
   font-family: "Oooh Baby", cursive;
   font-size: 8.2rem;
   font-weight: 700;
+  color: rgba(219, 164, 166);
+  text-shadow: 1px 1px 2px black;
   position: relative;
-  top: 200px;
+  top: 100px;
   text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
   .header-content h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
     position: relative;
-    top: 250px;
+    top: 300px;
   }
 }
 
-.header-content b {
-  font-size: 1.6rem;
-  font-weight: 700;
-  position: relative;
-  top: 90px;
-  text-transform: capitalize;
-  padding-bottom: 60px;
-}
-@media screen and (max-width: 600px) {
-  .header-content b {
-    font-size: 1.4rem;
-    position: relative;
-    top: 180px;
-  }
-}
 .contact-button {
   display: inline-block;
   outline: none;
@@ -181,9 +170,8 @@ header {
   font-size: 14px;
   line-height: 1;
   border-radius: 500px;
-  transition-property: background-color, border-color, color, box-shadow, filter;
   transition-duration: 0.3s;
-  border: 1px solid transparent;
+  border: 1px solid black;
   letter-spacing: 2px;
   min-width: 160px;
   text-decoration: none;
@@ -191,15 +179,21 @@ header {
   white-space: normal;
   font-weight: 700;
   text-align: center;
-  padding: 17px 48px;
-  color: #fff;
-  background-color: #000;
+  margin-top: 80px;
+  padding: 17px 78px;
+  color: #000;
+  background-color: rgba(219, 164, 166);
   height: 48px;
+}
+@media screen and (max-width: 600px) {
+  .contact-button {
+    position: relative;
+    top: 300px;
+  }
 }
 .contact-button:hover {
   transform: scale(1.04);
   transition: all 0.2s ease;
-  background-color: #000;
 }
 .description {
   float: left;
@@ -233,12 +227,6 @@ hr {
   font-size: 20px;
   font-weight: 500;
 }
-.price-content h1 {
-  text-align: center;
-  font-family: "Oooh Baby", cursive;
-  font-size: 55px;
-  color: #000;
-}
 
 .price-content:after {
   content: "";
@@ -251,24 +239,24 @@ hr {
 }
 .price-card {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  margin: 40px;
+  margin: 10px;
   padding: 20px;
   text-align: center;
-  height: 600px;
+  height: 630px;
   border-radius: 20px;
-  background-color: #b6a19e;
+  background-color: rgba(219, 164, 166);
 }
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1000px) {
   .price-card {
     height: 80%;
-    margin: 0 20px;
+    margin: 1px;
+    border-radius: 0px;
   }
 }
 
 .lower-description {
   float: left;
   width: 100%;
-  padding: 0 30px;
 }
 
 .lower-description p {
@@ -276,7 +264,7 @@ hr {
   line-height: 30px;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1000px) {
   .lower-description {
     width: 100%;
     display: block;
@@ -287,37 +275,60 @@ hr {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 20px;
-  margin: 40px;
+  margin: 10px;
   margin-bottom: 400px;
   padding: 20px;
-  background-color: #b6a19e;
+  background-color: rgba(219, 164, 166);
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1000px) {
   .lower-price-card {
     height: 80%;
-    margin: 0 10px;
+    margin: 1px;
+    border-radius: 0px;
     margin-bottom: 400px;
+  }
+}
+.overlays {
+  margin-bottom: 400px;
+  padding: 20px;
+}
+.adjust-overlay {
+  margin-right: 100px;
+  position: relative;
+  top: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .adjust-overlay {
+    margin-right: 0px;
+    position: relative;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .overlays img {
+    width: 90%;
   }
 }
 .aboutme-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #b6a19e;
-  border-radius: 20px;
+  background-color: rgba(219, 164, 166);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  margin: 40px;
   height: 670px;
   width: auto;
   margin-bottom: 400px;
   overflow: hidden;
-  font-size: 19px;
+  font-size: 25px;
+  letter-spacing: 2px;
   font-weight: 500;
   line-height: 30px;
 }
 .aboutme-container p,
 h2 {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 @media screen and (max-width: 1000px) {
   .aboutme-container {
@@ -325,8 +336,6 @@ h2 {
     justify-content: center;
     align-items: center;
     height: auto;
-    width: 90%;
-    margin-left: 5%;
     margin-bottom: 400px;
   }
 }
@@ -346,7 +355,6 @@ h2 {
 
 .aboutme-body {
   padding: 5px;
-  min-height: 250px;
   text-align: left;
 }
 
@@ -356,23 +364,11 @@ div.container {
 }
 div.container,
 h1 {
-  font-family: "Oooh Baby", cursive;
-  font-size: 55px;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
   text-align: center;
-}
-
-ul.myUL {
-  line-height: 30px;
-  font-size: 18px;
-  padding-top: 50px;
-  list-style-type: circle;
-  display: inline-block;
-  text-align: left;
-}
-@media screen and (max-width: 600px) {
-  .myUL {
-    margin-top: 120px;
-  }
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 footer {
@@ -384,12 +380,7 @@ footer {
   font-size: 22px;
   margin-top: 50px;
   color: black;
-  background: rgb(108, 100, 139);
-  background: linear-gradient(
-    328deg,
-    rgba(108, 100, 139, 1) 30%,
-    rgba(182, 161, 158, 1) 70%
-  );
+  background-color: rgba(219, 164, 166);
 }
 
 .footer-content {
@@ -405,6 +396,12 @@ footer {
   font-size: 3.2rem;
   font-weight: 700;
   text-transform: capitalize;
+}
+.footer-content h1 {
+  font-family: "Oooh Baby", cursive;
+  font-size: 55px;
+  text-align: center;
+  text-transform: none;
 }
 
 .footer-content p {
@@ -457,7 +454,7 @@ footer {
 }
 .elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {
   z-index: 0 !important;
-  padding: 30px !important;
+  width: 100% !important;
 }
 
 .cover {
@@ -501,14 +498,15 @@ footer {
   height: 30px;
   position: absolute;
   right: 25.8px;
+  top: 11px;
 }
 .hamburger span {
   width: 20px;
   height: 30px;
-  margin-bottom: 2.1px;
+  margin-bottom: 3px;
 }
 .hamburger3 {
-  padding: 4px;
+  padding: 2.5px;
 }
 
 .hamburger .bar {
@@ -525,9 +523,9 @@ footer {
   transform: rotate(45deg);
   height: 3px;
   position: relative;
-  right: 1.5px;
-
-  width: 8px;
+  right: 3px;
+  top: 1px;
+  width: 10px;
 }
 
 .burger-icon:checked + label > .hamburger3 > .bar3 {
@@ -544,6 +542,7 @@ footer {
   transform: rotate(-45deg);
   height: 3px;
   position: relative;
-  right: 1.72px;
-  width: 8px;
+  right: 3px;
+  bottom: 1px;
+  width: 10px;
 }
