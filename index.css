@@ -32,6 +32,7 @@ body {
   color: #000;
   font-weight: 600;
   text-align: center;
+  letter-spacing: 4px;
   padding: 14px 36px;
   position: relative;
   top: 5px;
@@ -42,6 +43,7 @@ body {
 .move-right a:hover {
   transform: scale(1.04);
   transition: all 0.2s ease;
+  color: #fff;
 }
 .topnav .icon {
   display: none;
@@ -58,6 +60,7 @@ body {
   font-family: "Oooh Baby", cursive;
   font-size: 25px;
   padding: 14px 16px;
+  letter-spacing: 0px;
   position: relative;
   top: 2px;
   font-weight: 600;
@@ -148,7 +151,7 @@ header {
   font-family: "Oooh Baby", cursive;
   font-size: 8.2rem;
   font-weight: 700;
-  color: rgba(219, 164, 166);
+  color: #000;
   text-shadow: 1px 1px 2px black;
   position: relative;
   top: 100px;
@@ -179,7 +182,7 @@ header {
   font-weight: 700;
   text-align: center;
   margin-top: 80px;
-  padding: 17px 78px;
+  padding: 18px 78px;
   color: #000;
   background-color: rgba(219, 164, 166);
   height: 48px;
@@ -229,7 +232,6 @@ header {
   margin-bottom: 400px;
   margin-right: 1%;
   margin-left: 1%;
-
   overflow: hidden;
   font-size: 18px;
   letter-spacing: 2.5px;
@@ -248,6 +250,8 @@ header {
     align-items: center;
     height: auto;
     margin-bottom: 400px;
+    margin-right: 0%;
+    margin-left: 0%;
   }
 }
 
@@ -380,6 +384,10 @@ footer {
   transform: scale(1.24);
   transition: all 0.2s ease;
   color: #fff;
+}
+.space a {
+  padding: 20px;
+  font-weight: 600;
 }
 .elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {
   z-index: 0 !important;

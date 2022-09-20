@@ -16,7 +16,10 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
+#Kuvat {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
 .topnav {
   width: 100%;
   background-color: rgba(219, 164, 166, 0.9);
@@ -34,6 +37,7 @@ body {
   text-align: center;
   padding: 14px 36px;
   position: relative;
+  letter-spacing: 4px;
   top: 5px;
   text-decoration: none;
   font-size: 18px;
@@ -42,6 +46,7 @@ body {
 .move-right a:hover {
   transform: scale(1.04);
   transition: all 0.2s ease;
+  color: #fff;
 }
 .topnav .icon {
   display: none;
@@ -60,6 +65,7 @@ body {
   padding: 14px 16px;
   position: relative;
   top: 2px;
+  letter-spacing: 0px;
   font-weight: 600;
   float: left;
 }
@@ -116,17 +122,42 @@ body {
     transition: all 0.2s ease;
   }
 }
-header {
+.hero1 {
   left: 0;
   right: 0;
   width: 100%;
-  height: 1000px;
+  height: 980px;
+  color: black;
+  text-align: center;
+  background-position: top;
+  background-size: cover;
+  background-image: url("/assets/kynnet2.JPG");
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  .hero1 {
+    background-position: right;
+    height: 800px;
+  }
+}
+
+.hero2 {
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 980px;
   color: black;
   text-align: center;
   background-position: center;
   background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/jjonez96/IidanSivut/main/public/pictures/oona.jpg");
+  background-image: url("/assets/kynnet3.JPG");
   margin-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  .hero2 {
+    background-position: center;
+    height: 800px;
+  }
 }
 .header-content {
   display: flex;
@@ -146,10 +177,12 @@ header {
   font-family: "Oooh Baby", cursive;
   font-size: 8.2rem;
   font-weight: 700;
-  color: rgba(219, 164, 166);
+  color: #000;
+
   text-shadow: 1px 1px 2px black;
   position: relative;
   top: 300px;
+  right: 10px;
   text-transform: capitalize;
 }
 
@@ -157,7 +190,7 @@ header {
   .header-content h1 {
     font-size: 4.5rem;
     position: relative;
-    top: 400px;
+    top: 350px;
   }
 }
 .service-container {
@@ -227,8 +260,15 @@ footer {
 }
 .footer-content img {
   margin-top: -420px;
-  margin-right: 1700px;
+  margin-right: 1520px;
   object-fit: cover;
+}
+@media screen and (max-width: 1300px) {
+  .footer-content img {
+    object-fit: cover;
+    margin-right: 900px;
+    margin-top: -420px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .footer-content img {
@@ -296,7 +336,11 @@ footer {
 .socials a:hover i {
   transform: scale(1.24);
   transition: all 0.2s ease;
-  color: #000;
+  color: #fff;
+}
+.space a {
+  padding: 20px;
+  font-weight: 600;
 }
 .elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {
   z-index: 0 !important;
