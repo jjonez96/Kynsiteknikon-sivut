@@ -16,7 +16,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
 .topnav {
   width: 100%;
   background-color: rgba(219, 164, 166, 0.9);
@@ -33,11 +32,11 @@ body {
   font-weight: 600;
   text-align: center;
   letter-spacing: 4px;
-  padding: 14px 36px;
+  padding: 17px 36px;
   position: relative;
   top: 5px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .move-right a:hover {
@@ -129,7 +128,7 @@ header {
   text-align: center;
   background-position: center;
   background-size: cover;
-  background-image: url("https://raw.githubusercontent.com/jjonez96/IidanSivut/main/public/pictures/oona.jpg");
+  background-image: url("assets/oona.jpg");
   margin-bottom: 50px;
 }
 
@@ -151,7 +150,7 @@ header {
   font-family: "Oooh Baby", cursive;
   font-size: 8.2rem;
   font-weight: 700;
-  color: #000;
+  color: rgba(219, 164, 166);
   text-shadow: 1px 1px 2px black;
   position: relative;
   top: 100px;
@@ -176,6 +175,7 @@ header {
   transition-duration: 0.3s;
   letter-spacing: 2px;
   min-width: 160px;
+  filter: none;
   text-decoration: none;
   text-transform: uppercase;
   white-space: normal;

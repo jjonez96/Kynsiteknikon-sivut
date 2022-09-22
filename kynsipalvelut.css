@@ -35,12 +35,13 @@ body {
   color: #000;
   font-weight: 600;
   text-align: center;
-  padding: 14px 36px;
+  padding: 17px 36px;
+
   position: relative;
   letter-spacing: 4px;
   top: 5px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .move-right a:hover {
@@ -100,7 +101,6 @@ summary:before {
   transition: 0.25s transform ease;
 }
 
-/* THE MAGIC 🧙‍♀️ */
 details[open] > summary:before {
   transform: rotate(90deg);
 }
