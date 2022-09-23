@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -59,85 +59,87 @@
         </label>
       </a>
     </nav>
-    <button onclick="topFunction()" id="backToTop">
-      <i class="fa fa-arrow-up"></i>
-    </button>
+
+    <!-- Header -->
     <header class="hero" id="Lillaiita">
-      <article>
-        <div>hi</div>
-        <div class="header-content">
-          <h1>
-            Lillaiita <br />
-            Kynsistudio
-          </h1>
-          <a class="contact-button" href="#Yhteystiedot">Ota Yhteyttä</a>
-        </div>
+      <article class="header-content">
+        <h1>
+          Lillaiita <br />
+          Kynsistudio
+        </h1>
+        <a class="contact-button" href="#Yhteystiedot">Ota Yhteyttä</a>
       </article>
     </header>
+
+    <!-- Images under the header -->
     <div class="overlays">
       <img src="/assets/overlay1.png" alt="overlay1" class="adjust-overlay" />
       <img src="/assets/overlay2.png" alt="overlay2" />
     </div>
+
+    <!-- Aboutme section -->
     <h1 id="Kokemus">TIETOJA MINUSTA</h1>
-    <div class="aboutme-container">
-      <div class="aboutme-header">
-        <img src="/assets/iida.jpg" alt="rover" />
-      </div>
-      <article>
-        <div class="aboutme-body">
-          <h2>KOULUTUS</h2>
-          <p>
-            Olen huhtikuussa 2022 valmistunut kosmetologi. Opintoni suoritin
-            Tampereen aikuiskoulutuskeskus Lumovassa. Toukokuussa 2022 sain myös
-            rakennekynsien laajan peruskoulutuksen suoritettua Tampereella.
-            Koulutuksen järjestävänä tahona toimi Magnifique.
-          </p>
-        </div>
+    <div class="aboutme-container aboutme-header">
+      <img src="/assets/iida.jpg" alt="iida" />
+      <article class="aboutme-body">
+        <h2>KOULUTUS</h2>
+        <p>
+          Olen huhtikuussa 2022 valmistunut kosmetologi. Opintoni suoritin
+          Tampereen aikuiskoulutuskeskus Lumovassa. Toukokuussa 2022 sain myös
+          rakennekynsien laajan peruskoulutuksen suoritettua Tampereella.
+          Koulutuksen järjestävänä tahona toimi Magnifique.
+        </p>
       </article>
     </div>
+
+    <!-- Instagram section -->
     <h1 id="Kuvat">Seuraa Instassa!</h1>
     <div class="elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd"></div>
     <div class="cover"></div>
-    <footer id="Yhteystiedot">
-      <div class="footer-content">
-        <article>
-          <a href="#Lillaiita"><h1>Lillaiita Kynsistudio</h1></a>
-          <div class="space">
-            <a href="/kynsipalvelut.html">Kynsipalvelut</a>
-            <a href="/ajanvaraus.html">Ajanvaraus</a>
-          </div>
-          <br />
-          <address>
-            <b>osoite </b>
-            <p>Kettulankatu 5 A3 Seinäjoki</p>
-            <b>Sähköposti</b>
-            <p>
-              <a href="mailto:iidakasari@gmail.com">iidakasari@gmail.com</a>
-            </p>
-            <b>Puhelinnumero</b>
-            <p><a href="tel:+358501234567">0501234567</a></p>
-          </address>
-          <ul class="socials">
-            <li>
-              <a href="https://www.facebook.com/iida.kasari"
-                ><i class="fa fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/lillaiita_nails/"
-                ><i class="fa fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a href="https://fi.pinterest.com/lillaiita/"
-                ><i class="fa fa-pinterest"></i
-              ></a>
-            </li>
-          </ul>
-        </article>
-        <img src="/assets/footerimg.png" alt="img" />
+
+    <!-- Footer -->
+    <footer class="footer-content" id="Yhteystiedot">
+      <a href="#Lillaiita"><h1>Lillaiita Kynsistudio</h1></a>
+      <div class="footer-nav">
+        <a href="/kynsipalvelut.html">Kynsipalvelut</a>
+        <a href="/ajanvaraus.html">Ajanvaraus</a>
       </div>
+      <br />
+      <address>
+        <strong>osoite </strong>
+        <p>Kettulankatu 5 A3 Seinäjoki</p>
+        <strong>Sähköposti</strong>
+        <p>
+          <a href="mailto:iidakasari@gmail.com">iidakasari@gmail.com</a>
+        </p>
+        <strong>Puhelinnumero</strong>
+        <p><a href="tel:+358501234567">0501234567</a></p>
+      </address>
+      <ul class="socials">
+        <li>
+          <a href="https://www.facebook.com/iida.kasari"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/lillaiita_nails/"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://fi.pinterest.com/lillaiita/"
+            ><i class="fa fa-pinterest"></i
+          ></a>
+        </li>
+      </ul>
+      <img src="/assets/footerimg.png" alt="img" />
     </footer>
+
+    <!-- BackToTop button -->
+    <button onclick="topFunction()" id="backToTop">
+      <i class="fa fa-arrow-up"></i>
+    </button>
+
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <script src="index.js"></script>
   </body>
