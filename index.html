@@ -30,18 +30,16 @@
   <body>
     <!-- Navbar -->
     <nav class="topnav" id="myTopnav" onclick="responsiveNav()">
-      <div class="move-right">
-        <a href="#Lillaiita" class="lillaiita">Lillaiita Kynsistudio</a>
-        <a href="/kynsipalvelut.html">KYNSIPALVELUT</a>
-        <a href="/ajanvaraus.html">AJANVARAUS</a>
-        <a href="#Yhteystiedot">YHTEYSTIEDOT</a>
-        <a href="https://www.instagram.com/lillaiita_nails/" class="lillaiita">
-          <i class="fa fa-instagram instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/iida.kasari" class="lillaiita">
-          <i class="fa fa-facebook fa-facebook facebook"></i>
-        </a>
-      </div>
+      <a href="#Lillaiita" class="lillaiita">Lillaiita Kynsistudio</a>
+      <a href="/kynsipalvelut.html">KYNSIPALVELUT</a>
+      <a href="/ajanvaraus.html">AJANVARAUS</a>
+      <a href="#Yhteystiedot">YHTEYSTIEDOT</a>
+      <a href="https://www.instagram.com/lillaiita_nails/" class="lillaiita">
+        <i class="fa fa-instagram instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/iida.kasari" class="lillaiita">
+        <i class="fa fa-facebook fa-facebook facebook"></i>
+      </a>
       <a href="javascript:void(0);" class="icon">
         <input
           class="burger-icon visuallyHidden"
@@ -50,12 +48,12 @@
           onclick="responsiveNav()"
         />
         <label for="burger-icon">
-          <div class="hamburger hamburger3">
+          <section class="hamburger hamburger3">
             <span class="bar bar1"></span>
             <span class="bar bar2"></span>
             <span class="bar bar3"></span>
             <span class="bar bar4"></span>
-          </div>
+          </section>
         </label>
       </a>
     </nav>
@@ -72,14 +70,22 @@
     </header>
 
     <!-- Images under the header -->
-    <div class="overlays">
-      <img src="/assets/overlay1.png" alt="overlay1" class="adjust-overlay" />
-      <img src="/assets/overlay2.png" alt="overlay2" />
+    <div class="heading-img">
+      <img
+        src="/assets/heading1.png"
+        alt="heading-img"
+        class="adjust-heading-img"
+      />
+      <img
+        src="/assets/heading2.png"
+        alt="heading-img"
+        class="adjust-heading-img"
+      />
     </div>
 
     <!-- Aboutme section -->
-    <h1 id="Kokemus">TIETOJA MINUSTA</h1>
-    <div class="aboutme-container aboutme-header">
+    <h1>TIETOJA MINUSTA</h1>
+    <main class="aboutme-container">
       <img src="/assets/iida.jpg" alt="iida" />
       <article class="aboutme-body">
         <h2>KOULUTUS</h2>
@@ -90,7 +96,7 @@
           Koulutuksen järjestävänä tahona toimi Magnifique.
         </p>
       </article>
-    </div>
+    </main>
 
     <!-- Instagram section -->
     <h1 id="Kuvat">Seuraa Instassa!</h1>
@@ -100,10 +106,10 @@
     <!-- Footer -->
     <footer class="footer-content" id="Yhteystiedot">
       <a href="#Lillaiita"><h1>Lillaiita Kynsistudio</h1></a>
-      <div class="footer-nav">
+      <nav>
         <a href="/kynsipalvelut.html">Kynsipalvelut</a>
         <a href="/ajanvaraus.html">Ajanvaraus</a>
-      </div>
+      </nav>
       <br />
       <address>
         <strong>osoite </strong>
@@ -114,6 +120,17 @@
         </p>
         <strong>Puhelinnumero</strong>
         <p><a href="tel:+358501234567">0501234567</a></p>
+        <div class="mapouter">
+          <iframe
+            class="gmap_iframe"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=Kettulankatu&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
       </address>
       <ul class="socials">
         <li>
@@ -132,7 +149,6 @@
           ></a>
         </li>
       </ul>
-      <img src="/assets/footerimg.png" alt="img" />
     </footer>
 
     <!-- BackToTop button -->

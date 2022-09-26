@@ -36,7 +36,6 @@ body {
   font-weight: 600;
   text-align: center;
   padding: 17px 36px;
-
   position: relative;
   letter-spacing: 4px;
   top: 5px;
@@ -44,11 +43,12 @@ body {
   font-size: 16px;
 }
 
-.move-right a:hover {
+nav a:hover {
   transform: scale(1.04);
   transition: all 0.2s ease;
   color: #fff;
 }
+
 .topnav .icon {
   display: none;
 }
@@ -70,44 +70,7 @@ body {
   font-weight: 600;
   float: left;
 }
-details {
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 0.5rem;
-  box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  overflow: hidden;
-}
-summary {
-  padding: 0.85rem;
-  display: block;
-  background-color: rgba(219, 164, 166);
-  padding-left: 2.2rem;
-  position: relative;
-  text-transform: uppercase;
-  cursor: pointer;
-}
 
-summary:before {
-  content: "";
-  border-width: 0.4rem;
-  border-style: solid;
-  border-color: transparent transparent transparent #000;
-  position: absolute;
-  top: 1.3rem;
-  left: 1rem;
-  transform: rotate(0);
-  transform-origin: 0.2rem 50%;
-  transition: 0.25s transform ease;
-}
-
-details[open] > summary:before {
-  transform: rotate(90deg);
-}
-
-details summary::-webkit-details-marker {
-  display: none;
-}
 @media screen and (max-width: 908px) {
   .topnav a:not(:first-child) {
     display: none;
@@ -164,10 +127,9 @@ details summary::-webkit-details-marker {
   left: 0;
   right: 0;
   width: 100%;
-  height: 980px;
+  height: 668px;
   color: black;
   text-align: center;
-  background-position: top;
   background-size: cover;
   background-image: url("/assets/kynnet2.JPG");
   margin-bottom: 50px;
@@ -175,7 +137,6 @@ details summary::-webkit-details-marker {
 @media screen and (max-width: 600px) {
   .hero1 {
     background-position: right;
-    height: 800px;
   }
 }
 
@@ -183,7 +144,7 @@ details summary::-webkit-details-marker {
   left: 0;
   right: 0;
   width: 100%;
-  height: 980px;
+  height: 668px;
   color: black;
   text-align: center;
   background-position: center;
@@ -191,10 +152,19 @@ details summary::-webkit-details-marker {
   background-image: url("/assets/kynnet3.JPG");
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1300px) {
+  .hero1 {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .hero2 {
+    height: 500px;
+  }
+}
 @media screen and (max-width: 600px) {
   .hero2 {
     background-position: center;
-    height: 800px;
   }
 }
 .header-content {
@@ -218,7 +188,7 @@ details summary::-webkit-details-marker {
   color: rgba(219, 164, 166);
   text-shadow: 1px 1px 2px black;
   position: relative;
-  top: 300px;
+  top: 100px;
   right: 10px;
   text-transform: capitalize;
 }
@@ -227,32 +197,35 @@ details summary::-webkit-details-marker {
   .header-content h1 {
     font-size: 4.5rem;
     position: relative;
-    top: 350px;
+    top: 250px;
   }
 }
 .service-container {
-  display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #fff;
   height: 670px;
-  width: auto;
-  margin-bottom: 50px;
-  overflow: hidden;
+  height: auto;
   font-size: 18px;
   letter-spacing: 2.5px;
   font-weight: 500;
-  line-height: 30px;
+}
+hr {
+  border: 0;
+  height: 0;
+  width: 80%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(219, 164, 166);
 }
 .service-container p,
 h2 {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 200px;
+  line-height: 35px;
+  padding-left: 200px;
 }
 .service-container p {
   font-size: 22px;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   .service-container {
     display: grid;
     justify-content: center;
@@ -260,22 +233,83 @@ h2 {
     height: auto;
   }
 }
-
-.service-header img {
-  object-fit: cover;
-  margin-left: 40px;
-}
-@media screen and (max-width: 1000px) {
-  .service-header img {
-    object-fit: cover;
-    width: 80%;
+@media screen and (max-width: 1100px) {
+  .service-container p,
+  h2 {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
-
+.service-container img {
+  object-fit: cover;
+  margin-left: 40px;
+  height: 250px;
+}
+@media screen and (max-width: 600px) {
+  .service-container img {
+    object-fit: cover;
+    width: 80%;
+    height: 100%;
+  }
+}
 .service-body {
   padding: 5px;
   text-align: left;
 }
+details {
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0.1rem 1rem -0.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+  details {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 600px) {
+  details {
+    width: 90%;
+  }
+}
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+summary {
+  padding: 0.85rem;
+  display: block;
+  background-color: rgba(219, 164, 166);
+  padding-left: 2.2rem;
+  position: relative;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+summary:hover {
+  transition: all 0.2s ease;
+  background-color: rgba(219, 164, 166, 0.9);
+}
+
+summary:before {
+  content: "";
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #000;
+  position: absolute;
+  top: 1.2rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+}
+
 footer {
   position: relative;
   bottom: 0;
@@ -295,48 +329,28 @@ footer {
   flex-direction: column;
   text-align: center;
 }
-.footer-content img {
-  margin-top: -420px;
-  margin-right: 1520px;
-  object-fit: cover;
-}
-@media screen and (max-width: 1300px) {
-  .footer-content img {
-    object-fit: cover;
-    margin-right: 900px;
-    margin-top: -420px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .footer-content img {
-    display: none;
-  }
-}
 
-.footer-content h3 {
-  font-family: "Oooh Baby", cursive;
-  font-size: 3.2rem;
-  font-weight: 700;
-  text-transform: capitalize;
-}
 .footer-content h1 {
   font-family: "Oooh Baby", cursive;
-  font-size: 55px;
+  font-size: 50px;
   text-align: center;
   letter-spacing: 0px;
   text-transform: none;
 }
-.footer-nav a {
-  padding: 20px;
-  font-weight: 600;
-}
+
 .footer-content p {
   max-width: 500px;
   margin: 10px;
   line-height: 28px;
   font-size: 20px;
-
   color: #000000;
+}
+footer nav a {
+  padding: 20px;
+  font-size: 16px !important;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 .footer-content a {
   text-decoration: none;
@@ -344,7 +358,28 @@ footer {
   color: #000000;
 }
 .footer-content a:hover {
+  transition: all 0.2s ease;
   color: #fff;
+}
+.mapouter {
+  position: relative;
+  top: 20px;
+  text-align: right;
+  width: 500px;
+  height: 400px;
+  overflow: hidden;
+  background: none !important;
+  height: 300px;
+}
+@media screen and (max-width: 600px) {
+  .mapouter {
+    width: 350px;
+  }
+}
+.gmap_iframe {
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 290px !important;
 }
 
 .socials {
@@ -374,7 +409,6 @@ footer {
 }
 
 .socials a:hover i {
-  transform: scale(1.24);
   transition: all 0.2s ease;
   color: #fff;
 }
@@ -388,7 +422,7 @@ footer {
   position: relative;
   bottom: 80px;
   background-color: #fff;
-  height: 200px;
+  height: 100px;
 }
 #backToTop {
   display: none;

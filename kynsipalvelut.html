@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="kynsipalvelut.css" />
+    <link rel="stylesheet" href="sub-pages.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,18 +30,16 @@
   <body>
     <!-- Navbar -->
     <nav class="topnav" id="myTopnav" onclick="responsiveNav()">
-      <div class="move-right">
-        <a href="/index.html" class="lillaiita">Lillaiita Kynsistudio</a>
-        <a href="/kynsipalvelut.html">KYNSIPALVELUT</a>
-        <a href="/ajanvaraus.html">AJANVARAUS</a>
-        <a href="#Yhteystiedot">YHTEYSTIEDOT</a>
-        <a href="https://www.instagram.com/lillaiita_nails/" class="lillaiita">
-          <i class="fa fa-instagram instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/iida.kasari" class="lillaiita">
-          <i class="fa fa-facebook fa-facebook facebook"></i>
-        </a>
-      </div>
+      <a href="/index.html" class="lillaiita">Lillaiita Kynsistudio</a>
+      <a href="/kynsipalvelut.html">KYNSIPALVELUT</a>
+      <a href="/ajanvaraus.html">AJANVARAUS</a>
+      <a href="#Yhteystiedot">YHTEYSTIEDOT</a>
+      <a href="https://www.instagram.com/lillaiita_nails/" class="lillaiita">
+        <i class="fa fa-instagram instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/iida.kasari" class="lillaiita">
+        <i class="fa fa-facebook fa-facebook facebook"></i>
+      </a>
       <a href="javascript:void(0);" class="icon">
         <input
           class="burger-icon visuallyHidden"
@@ -68,9 +66,9 @@
     </header>
 
     <!-- Service content -->
-    <div class="service-container service-header">
-      <img src="/assets/overlay1.png" alt="overlay" />
-      <article class="service-body">
+    <article class="service-container">
+      <img src="/assets/heading1.png" alt="heading-img" />
+      <section class="service-body">
         <p>
           Kestävä vaihtoehto, mikäli haluaa kynsiin lisäpituutta ja tietyn
           muodon. Muotin ja rakennegeelin avulla omiin kynsiin tehdään jatketta,
@@ -94,12 +92,12 @@
             </strong>
           </p>
         </details>
-      </article>
-    </div>
+      </section>
+    </article>
     <hr />
-    <div class="service-container service-header">
-      <img src="/assets/overlay3.png" alt="overlay" />
-      <article class="service-body">
+    <article class="service-container">
+      <img src="/assets/heading3.png" alt="heading-img" />
+      <section class="service-body">
         <p>
           Normaalia kynsilakkaa kestävämpi vaihtoehto, jossa oman kynnen päälle
           tehdään geelilakkaukset. Geelaus tehdään oman luonnon kynnen päälle,
@@ -124,12 +122,12 @@
             </strong>
           </p>
         </details>
-      </article>
-    </div>
+      </section>
+    </article>
     <hr />
-    <div class="service-container service-header">
-      <img src="/assets/overlay4.png" alt="overlay" />
-      <article class="service-body">
+    <article class="service-container">
+      <img src="/assets/heading4.png" alt="heading-img" />
+      <section class="service-body">
         <p>
           Koristelut tehdään asiakkaan toiveiden mukaan. Hän voi kertoa itse tai
           näyttää kuvasta, minkä tyylisiä oli ajatellut. Mielikuvitus on rajana,
@@ -141,29 +139,27 @@
           asiakas tietää paljonko koristelut tulevat maksamaan kynsihuollon
           päälle.
           <br />
-          <br />
           <strong>
             Pienet koristelut 1-5 kynteen 5€
             <br />
             Isot koristelut 1-5 kynteen 10€
           </strong>
         </p>
-      </article>
-    </div>
+      </section>
+    </article>
     <hr />
-    <div class="service-container service-header">
-      <img src="/assets/overlay5.png" alt="overlay" />
-      <article class="service-body">
+    <article class="service-container">
+      <img src="/assets/heading5.png" alt="heading-img" />
+      <section class="service-body">
         <p>
           Huollossa vanhat geelaukset poistetaan kynsiporaa ja kynsiviilaa
           käyttäen ja geelilakkaukset uusitaan asiakkaan toiveiden mukaan.
           Suositeltu huoltoväli noin 2-3 viikkoa.
           <br />
-          <br />
           <strong> Yhden kynnen korjaus 10€ </strong>
         </p>
-      </article>
-    </div>
+      </section>
+    </article>
 
     <!-- Instagram section -->
     <h1 id="Kuvat">Seuraa Instassa!</h1>
@@ -174,10 +170,10 @@
     <!-- Footer -->
     <footer class="footer-content" id="Yhteystiedot">
       <a href="/index.html"><h1>Lillaiita Kynsistudio</h1></a>
-      <div class="footer-nav">
+      <nav>
         <a href="/kynsipalvelut.html">Kynsipalvelut</a>
         <a href="/ajanvaraus.html">Ajanvaraus</a>
-      </div>
+      </nav>
       <br />
       <address>
         <strong>osoite </strong>
@@ -188,6 +184,17 @@
         </p>
         <strong>Puhelinnumero</strong>
         <p><a href="tel:+358501234567">0501234567</a></p>
+        <div class="mapouter">
+          <iframe
+            class="gmap_iframe"
+            width="100%"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            src="https://maps.google.com/maps?width=400&amp;height=300&amp;hl=en&amp;q=Kettulankatu&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ></iframe>
+        </div>
       </address>
       <ul class="socials">
         <li>
@@ -206,7 +213,6 @@
           ></a>
         </li>
       </ul>
-      <img src="/assets/footerimg.png" alt="img" />
     </footer>
 
     <!-- BackToTop button -->
