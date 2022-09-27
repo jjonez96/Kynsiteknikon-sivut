@@ -192,7 +192,30 @@ nav a:hover {
   right: 10px;
   text-transform: capitalize;
 }
-
+.header-content nav a {
+  padding: 10px;
+  font-size: 16px !important;
+  font-weight: 600;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 1px 1px 2px black;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header-content nav a:hover {
+  color: #000;
+}
+@media screen and (max-width: 600px) {
+  .header-content nav a {
+    position: relative;
+    top: 200px;
+  }
+}
 @media screen and (max-width: 600px) {
   .header-content h1 {
     font-size: 4.5rem;
@@ -377,7 +400,7 @@ footer nav a {
   }
 }
 .gmap_iframe {
-  border-radius: 30px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 290px !important;
 }
