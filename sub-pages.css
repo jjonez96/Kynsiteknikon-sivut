@@ -39,6 +39,7 @@ body {
   position: relative;
   letter-spacing: 4px;
   top: 5px;
+  text-transform: uppercase;
   text-decoration: none;
   font-size: 16px;
 }
@@ -66,6 +67,8 @@ nav a:hover {
   padding: 15px 11px;
   letter-spacing: 0px;
   position: relative;
+  text-transform: none;
+
   top: 2px;
   font-weight: 600;
   float: left;
@@ -173,11 +176,13 @@ nav a:hover {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  position: relative;
+  bottom: 100px;
 }
 @media screen and (max-width: 600px) {
   .header-content {
     position: relative;
-    bottom: 100px;
+    bottom: 200px;
   }
 }
 
@@ -248,7 +253,7 @@ h2 {
 .service-container p {
   font-size: 22px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 770px) {
   .service-container {
     display: grid;
     justify-content: center;
@@ -256,7 +261,7 @@ h2 {
     height: auto;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 770px) {
   .service-container p,
   h2 {
     padding-right: 30px;
@@ -268,7 +273,7 @@ h2 {
   margin-left: 40px;
   height: 250px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .service-container img {
     object-fit: cover;
     width: 80%;
