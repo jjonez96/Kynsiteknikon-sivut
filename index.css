@@ -114,7 +114,7 @@ nav a:hover {
   .topnav.responsive .move-right {
     text-align: center;
     transition: 700ms all ease;
-    transform: translateX(5%);
+    transform: translateX(1%);
   }
   .topnav.responsive .move-right a:hover {
     transition: all 0.2s ease;
@@ -463,16 +463,12 @@ footer nav a {
   width: 20px;
   height: 30px;
   position: absolute;
-  right: 25.8px;
-  top: 11px;
+  right: 16.8px;
 }
 .hamburger span {
   width: 20px;
   height: 30px;
-  margin-bottom: 3px;
-}
-.hamburger3 {
-  padding: 2.5px;
+  margin-bottom: 4px;
 }
 
 .hamburger .bar {
@@ -485,30 +481,27 @@ footer nav a {
   transition: all 0.4s ease-in-out;
 }
 
-.burger-icon:checked + label > .hamburger3 > .bar1 {
+.burger-icon:checked + label > .hamburger > .bar1 {
   transform: rotate(45deg);
   height: 3px;
   position: relative;
-  right: 3px;
-  top: 1px;
+  right: 2px;
+  top: 4.5px;
   width: 10px;
 }
 
-.burger-icon:checked + label > .hamburger3 > .bar3 {
+.burger-icon:checked + label > .hamburger > .bar3 {
   transform: rotate(45deg);
   height: 3px;
+  position: relative;
+  right: 4px;
+  top: -4px;
 }
 
-.burger-icon:checked + label > .hamburger3 > .bar2 {
-  transform: rotate(-45deg);
-  height: 3px;
-}
-
-.burger-icon:checked + label > .hamburger3 > .bar4 {
+.burger-icon:checked + label > .hamburger > .bar2 {
   transform: rotate(-45deg);
   height: 3px;
   position: relative;
-  right: 3px;
-  bottom: 1px;
-  width: 10px;
+  top: 2px;
+  right: 4px;
 }
