@@ -251,6 +251,8 @@ header {
 
 .aboutme-container p {
   font-size: 22px;
+  text-align: left;
+  padding: 45px;
 }
 @media screen and (max-width: 800px) {
   .aboutme-container {
@@ -263,7 +265,9 @@ header {
     margin-left: 0%;
   }
 }
-
+.aboutme-container p {
+  padding: 20px;
+}
 .aboutme-container img {
   height: 700px;
   object-fit: cover;
