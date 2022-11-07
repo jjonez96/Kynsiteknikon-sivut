@@ -275,13 +275,13 @@ header {
   text-align: left;
   padding: 45px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .aboutme-container {
     display: grid;
     justify-content: center;
     align-items: center;
     height: auto;
-    margin-bottom: 400px;
+    margin-bottom: 200px;
     margin-right: 0%;
     margin-left: 0%;
   }
@@ -294,7 +294,7 @@ header {
   object-fit: cover;
   width: 400px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .aboutme-container img {
     width: 100%;
     height: 500px;
@@ -402,7 +402,6 @@ footer {
   }
 }
 .address-content {
-  padding: 10px;
   padding-right: 20px;
   text-align: left;
 }
@@ -438,7 +437,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0 3rem 0;
 }
 
 .socials li {
@@ -462,6 +460,9 @@ footer {
 .socials a:hover i {
   transition: all 0.2s ease;
   color: #fff;
+}
+.copyright {
+  font-size: 18px !important;
 }
 
 .elfsight-app-f06535eb-42fa-4188-9c7f-02268feb16fd {

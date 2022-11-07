@@ -17,7 +17,6 @@ body {
   scroll-behavior: smooth;
 }
 #Kuvat {
-  padding-top: 200px;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 25px !important;
@@ -154,8 +153,14 @@ body {
   color: black;
   text-align: center;
   background-size: cover;
+  background-position: left;
   background-image: url("/assets/kynnet2.JPG");
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1300px) {
+  .hero1 {
+    height: 500px;
+  }
 }
 @media screen and (max-width: 600px) {
   .hero1 {
@@ -214,7 +219,6 @@ body {
   text-transform: capitalize;
 }
 .header-content nav a {
-  display: inline-block;
   outline: none;
   cursor: pointer;
   font-size: 14px;
@@ -226,43 +230,60 @@ body {
   white-space: normal;
   font-weight: 700;
   text-align: center;
-  line-height: 1;
   padding: 18px 38px;
   color: #000;
   background-color: rgba(219, 164, 166);
   margin: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  position: relative;
+  top: 50px;
 }
 .header-content nav a:hover {
-  transform: scale(1.04);
   transition: all 0.2s ease;
   background-color: rgba(219, 164, 166, 0.9);
 }
+
+@media screen and (max-width: 900px) {
+  .header-content nav a {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    padding: 15px 35px;
+    position: relative;
+    bottom: 100px;
+  }
+}
 @media screen and (max-width: 600px) {
   .header-content nav a {
-    position: relative;
     padding: 15px 35px;
-    top: 250px;
+    position: relative;
+    top: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .header-content h1 {
+    font-size: 4.5rem;
+    position: relative;
+    top: 100px;
   }
 }
 @media screen and (max-width: 600px) {
   .header-content h1 {
     font-size: 4.5rem;
     position: relative;
-    top: 250px;
+    top: 200px;
   }
 }
 .service-container {
   align-items: center;
   background-color: #fff;
-  height: auto;
   letter-spacing: 2.5px;
   font-weight: 500;
-  padding-bottom: 50px;
+}
+@media screen and (max-width: 600px) {
+  .service-container {
+    padding-bottom: 10px;
+  }
 }
 
 hr {
@@ -304,6 +325,9 @@ h2 {
 }
 .service-text {
   text-align: center;
+}
+.service-text a {
+  color: #000;
 }
 @media screen and (max-width: 770px) {
   .service-container {
@@ -411,7 +435,6 @@ footer {
   font-family: "Oooh Baby", cursive;
   font-size: 50px;
   text-align: center;
-  letter-spacing: 0px;
   text-transform: none;
 }
 
@@ -475,9 +498,11 @@ footer {
   }
 }
 .address-content {
-  padding: 10px;
   padding-right: 20px;
   text-align: left;
+}
+.copyright {
+  font-size: 18px !important;
 }
 @media screen and (max-width: 900px) {
   .address-content {
@@ -511,7 +536,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0 3rem 0;
 }
 
 .socials li {
