@@ -7,7 +7,6 @@ function responsiveNav() {
   }
 }
 let mybutton = document.getElementById("backToTop");
-
 window.onscroll = function () {
   scrollFunction();
 };
